@@ -1,0 +1,27 @@
+MULI $N0, $N0, 0
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+ADDI $N0, $N0, 3
+SD $N0, 0x0
+MULI $N0, $N0, 0
+ADDI $N0, $N0, 2
+SD $N0, 0x1
+MULI $N0, $N0, 0
+ADDI $N0, $N0, 1
+SD $N0, 0x2
+LD $N0, 0x0
+LD $N1, 0x1
+LD $M0, 0x2
+ADD $C0, $N0, $N1
+MUL $M0, $M0, $N1
+SUB $N0, $N0, $M0
+SUB $C0, $C0, $N0
+SD $C0, 0x0
+LD $N0, 0x0
